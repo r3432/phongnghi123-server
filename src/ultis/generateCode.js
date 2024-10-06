@@ -7,7 +7,7 @@ const generateCode = (value) => {
         .replace(/[\u0300-\u036f]/g, "")
         .split(" ")
         .join("")
-    let merge = value + process.env.phongtro123
+    let merge = value + process.env.phongnghi123
     console.log(merge)
     let length = merge.length
     // adc + phongtro123 = adcphongtro123
