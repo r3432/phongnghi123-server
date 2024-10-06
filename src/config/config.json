@@ -1,22 +1,29 @@
 {
-  "development": {
-    "username": "db_phongnghi123_user",
-    "password": "LnP1B92gPOVke45UkTIcMA38QxhgUHIt",
-    "database": "db_phongnghi123",
-    "host": "dpg-cs0k8vjtq21c73eeo8cg-a.singapore-postgres.render.com",
-    "dialect": "postgres",
-    "logging": false
-  },
+ "development": {
+  "username": "db_phongnghi123_user",
+  "password": "LnP1B92gPOVke45UkTIcMA38QxhgUHIt",
+  "database": "db_phongnghi123",
+  "host": "dpg-cs0k8vjtq21c73eeo8cg-a.singapore-postgres.render.com",
+  "dialect": "postgres",
+  "logging": false,
+  "dialectOptions": {
+    "ssl": {
+      "require": true,
+      "rejectUnauthorized": false
+    }
+  }
+}
+,
   "test": {
     "username": "root",
     "password": null,
     "database": "database_test",
     "host": "127.0.0.1",
     "dialect": "mysql",
-    "dialectOptions" : {
-      "ssl" : {
-        "require" : true,
-        "rejectUnauthorized":false
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
       }
     }
   },
@@ -27,10 +34,10 @@
     "host": "dpg-cs0k8vjtq21c73eeo8cg-a.singapore-postgres.render.com",
     "dialect": "postgres",
     "logging": false,
-    "dialectOptions" : {
-      "ssl" : {
-        "require" : true,
-        "rejectUnauthorized":false
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
       }
     }
   }
