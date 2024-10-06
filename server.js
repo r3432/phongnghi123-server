@@ -8,7 +8,7 @@ import generateDate from './src/ultis/generateDate'
 const app = express()
 // console.log(generateDate())
 app.use(cors({
-    origin: process.env.CLIENT_URL,
+    origin: "https://phongnghi123-client.vercel.app/",
     methods: ["POST", 'GET', 'PUT', "DELETE"]
 }))
 app.use(express.json())
